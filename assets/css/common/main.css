@@ -222,6 +222,16 @@ pre:hover .copy-code {
     content: "#";
 }
 
+.post-categories a:not(:last-of-type) {
+    margin-inline-end: .3em;
+}
+.post-categories a:not(:last-of-type):after {
+    content: ",";
+}
+.post-categories a:is(:first-of-type):before {
+    content: "# ";
+}
+
 
 /* images */
 

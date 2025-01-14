@@ -24,6 +24,15 @@
   </span></span>
 {{- end }}
 
+{{- if .Params.categories -}}
+<span class="meta-item">
+  <span class="post-categories">
+    {{- range ($.GetTerms "categories") -}}
+    <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+    {{- end -}}
+  </span></span>
+{{- end }}
+
 
 {{- if (.Param "ShowWordCount") -}}
 <span class="meta-item">
